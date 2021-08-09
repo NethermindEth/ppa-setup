@@ -1,0 +1,7 @@
+#!/bin/bash
+wget https://github.com/NethermindEth/nethermind/releases/download/1.10.77/nethermind-linux-amd64-1.10.77-8eaabaa-20210713.zip
+unzip nethermind-linux-amd64-1.10.77-8eaabaa-20210713.zip -d nethermind
+rm -rf nethermind-linux-amd64-1.10.77-8eaabaa-20210713.zip
+mv nethermind /usr/share/
+wget https://raw.githubusercontent.com/NethermindEth/nethermind/master/scripts/execution.sh -O /usr/bin/nethermind
+chmod +x /usr/bin/nethermind
